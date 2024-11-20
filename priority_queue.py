@@ -11,6 +11,8 @@ class Heapqueue:
         else:
             val=heapq.heappop(self.children)
             return val[-1]
+        
+
 my_ququq=Heapqueue()
 my_ququq.push(5,3)
 my_ququq.push(6,2)
@@ -22,3 +24,4 @@ print(my_ququq.pop())
 print(my_ququq.pop())
 print(my_ququq.pop())
 print(my_ququq.children)
+

@@ -1,0 +1,20 @@
+2024-11-20 10:26:46,872 :__main__- INFO - Add:10+0=10
+2024-11-20 10:26:46,876 :__main__- INFO - Sub:10/0=10
+2024-11-20 10:26:46,880 :__main__- INFO - Mul:10*0=0
+2024-11-20 10:26:46,884 :__main__- ERROR - Tried to divid by zero
+Traceback (most recent call last):
+  File "c:\Users\USER\Desktop\python_pactice\logging_practice.py", line 49, in division
+    result=x/y
+ZeroDivisionError: division by zero
+2024-11-20 10:26:46,896 :__main__- ERROR - {'x': 10, 'y': 0}
+2024-11-20 10:26:46,924 :__main__- INFO - Div:10/0=None
+2024-11-20 10:27:37,444 :__main__- INFO - Add:10+0=10
+2024-11-20 10:27:37,445 :__main__- INFO - Sub:10/0=10
+2024-11-20 10:27:37,447 :__main__- INFO - Mul:10*0=0
+2024-11-20 10:27:37,449 :__main__- ERROR - Tried to divid by zero
+Traceback (most recent call last):
+  File "c:\Users\USER\Desktop\python_pactice\logging_practice.py", line 49, in division
+    result=x/y
+ZeroDivisionError: division by zero
+2024-11-20 10:27:37,481 :__main__- ERROR - {'x': 10, 'y': 0}
+2024-11-20 10:27:37,483 :__main__- INFO - Div:10/0=None

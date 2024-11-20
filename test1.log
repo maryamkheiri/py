@@ -1,0 +1,29 @@
+DEBUG:__main__:Created Employee:Mahsa.Rezaee-Mahsa-Rezaee@gmail.com
+DEBUG:__main__:Created Employee:Marjan.Emdadi-Marjan-Emdadi@gmail.com
+DEBUG:__main__:Created Employee:Pooya.Asghari-Pooya-Asghari@gmail.com
+DEBUG:__main__:Created Employee:Mahsa.Rezaee-Mahsa-Rezaee@gmail.com
+DEBUG:__main__:Created Employee:Marjan.Emdadi-Marjan-Emdadi@gmail.com
+DEBUG:__main__:Created Employee:Pooya.Asghari-Pooya-Asghari@gmail.com
+INFO:__main__:Add:10+0=10
+INFO:__main__:Sub:10/0=10
+INFO:__main__:Mul:10*0=0
+ERROR:__main__:Tried to divid by zero
+Traceback (most recent call last):
+  File "c:\Users\USER\Desktop\python_pactice\logging_practice.py", line 49, in division
+    result=x/y
+ZeroDivisionError: division by zero
+ERROR:__main__:{'x': 10, 'y': 0}
+INFO:__main__:Div:10/0=None
+DEBUG:__main__:Created Employee:Mahsa.Rezaee-Mahsa-Rezaee@gmail.com
+DEBUG:__main__:Created Employee:Marjan.Emdadi-Marjan-Emdadi@gmail.com
+DEBUG:__main__:Created Employee:Pooya.Asghari-Pooya-Asghari@gmail.com
+INFO:__main__:Add:10+0=10
+INFO:__main__:Sub:10/0=10
+INFO:__main__:Mul:10*0=0
+ERROR:__main__:Tried to divid by zero
+Traceback (most recent call last):
+  File "c:\Users\USER\Desktop\python_pactice\logging_practice.py", line 49, in division
+    result=x/y
+ZeroDivisionError: division by zero
+ERROR:__main__:{'x': 10, 'y': 0}
+INFO:__main__:Div:10/0=None

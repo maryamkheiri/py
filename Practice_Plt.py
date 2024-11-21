@@ -1,4 +1,4 @@
-#draw (plot $ bar $ scatter $pie $donut )graphs in matplotlib
+#draw (plot $ bar $barh $scatter $pie $donut &Histograms )graphs in matplotlib
 import matplotlib.pyplot as plt
 from random import randint as rnd
 x=list(range(50))
@@ -62,8 +62,9 @@ print("$$$$$$$$$$")
 vals=[60,50,40,30,10,9,8,7,6]
 labels=["Python","C++","Go","Php","Java","Rust","","",""]
 cls=["gold","yellowgreen","teal","salmon","plum","red","silver","navy","tan"]
-plt.pie(vals,labels=labels,colors=cls,autopct="%2.0f%%",explode=[0,0,0,0.1,0.2,0.3,0.4,0.5,0.6])
-plt.savefig("./new_pig.png")
+plt.pie(vals,labels=labels,colors=cls,autopct="%0.2f%%",explode=[0,0,0,0.1,0.2,0.3,0.4,0.5,0.6],radius=0.5,shadow=True)
+plt.axis("equal")
+plt.savefig("./new_pig.png",bbox_inches="tight",transparent=True)
 plt.show()
 
 print("$$$$$$$$$$$$")
@@ -88,4 +89,15 @@ plt.xlabel("revenue")
 plt.barh(xpos-0.15,revenue,label="company.revenue")
 plt.barh(xpos+0.15,profit,label="company.profit")
 plt.legend(shadow=True,fontsize=8)
+plt.show()
+
+print("%%%%%%%%%%%%%")
+
+blood_sugar_men = [113, 85, 90, 150, 149, 88, 93, 115, 135, 80, 77, 82, 129]
+blood_sugar_women = [67, 98, 89, 120, 133, 150, 84, 69, 89, 79, 120, 112, 100]
+plt.xlabel("Sugar Range")
+plt.ylabel("Total No of Patients")
+plt.title("Sugare Blood")
+plt.hist([blood_sugar_men,blood_sugar_women],bins=[60,80,100,130,150],rwidth=0.95,color=["green","orange"],label=["blood_sugar_men","blood_sugar_women"])
+plt.legend(shadow=True,fontsize=6)
 plt.show()

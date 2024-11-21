@@ -12,7 +12,7 @@ plt.ylabel("Raised_Price" , color="purple")
 plt.plot(x,y,color=c, label="Gas")
 plt.plot(x,z,color="green", label="Oil")
 plt.grid()
-plt.legend()
+plt.legend(shadow=True)
 plt.show()
 
 print("######")
@@ -24,7 +24,7 @@ plt.figure(figsize=(20,5))
 plt.title("---")
 plt.bar(x,y,color=c,label="Gas Price")
 plt.plot(x,z,color="yellow",label="Oil Prce")
-plt.legend()
+plt.legend(shadow=True)
 plt.show()
 
 print("@@@@@@@@")
@@ -40,7 +40,7 @@ plt.scatter(x,y,c=choose_point(50,100,500),cmap="viridis",s=choose_point(50,100,
 plt.scatter(x,y,c=choose_point(50,0,20),marker="*",cmap="viridis",s=choose_point(50,30,50),label="Oil Prices",linewidths=2.0,alpha=0.7)#alpha for taransparany
 cb=plt.colorbar()
 cb.set_label("Car_Price")
-plt.legend()
+plt.legend(shadow=True)
 plt.show()
 
 print("*********")
@@ -64,4 +64,28 @@ labels=["Python","C++","Go","Php","Java","Rust","","",""]
 cls=["gold","yellowgreen","teal","salmon","plum","red","silver","navy","tan"]
 plt.pie(vals,labels=labels,colors=cls,autopct="%2.0f%%",explode=[0,0,0,0.1,0.2,0.3,0.4,0.5,0.6])
 plt.savefig("./new_pig.png")
+plt.show()
+
+print("$$$$$$$$$$$$")
+import matplotlib.pyplot as plt
+import numpy as np
+company=['GOOGL','AMZN','MSFT','FB']
+revenue=[90,136,89,27]
+profit=[40,2,34,12]
+xpos=np.arange(len(company))
+plt.xticks(xpos,company)
+plt.title("Us Stocks")
+plt.ylabel("revenue")
+plt.bar(xpos-0.15,revenue,width=0.3,label="company.revenue")
+plt.bar(xpos+0.15,profit,width=0.3,label="company.profit")
+plt.legend(shadow=True,fontsize=8)
+plt.show()
+
+print("&&&&&&&&&&&&")
+plt.yticks(xpos,company)
+plt.title("Us Stocks")
+plt.xlabel("revenue")
+plt.barh(xpos-0.15,revenue,label="company.revenue")
+plt.barh(xpos+0.15,profit,label="company.profit")
+plt.legend(shadow=True,fontsize=8)
 plt.show()
